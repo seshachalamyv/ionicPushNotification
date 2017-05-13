@@ -12,14 +12,17 @@ Take the name after `ionic2-starter-`, and that is the name of the template to b
 
 ```bash
 $ sudo npm install -g ionic cordova
-$ ionic start myBlank blank
+$ ionic start MyNewApp blank --appname MyNewApp --id com.ionicpush.mynewapppush
 ```
 
 Then, to run it, cd into `myBlank` and run:
 
 ```bash
 $ ionic cordova platform add ios
-$ ionic cordova run ios
+$ ionic cordova platform  add android
+$ ionic cordova platform  add ios
+$ ionic cordova plugin add cordova-plugin-fcm
+$ ionic cordova run android
 ```
 
 Substitute ios for android if not on a Mac.
